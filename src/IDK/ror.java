@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 
 public class ror extends JFrame {
     private JPanel jpMain;
@@ -36,7 +35,10 @@ public class ror extends JFrame {
        });
 
        bClear.addActionListener(new ActionListener() {
-           clearFields();
+           @Override
+           public void actionPerformed(ActionEvent e) {
+               clearFields();
+           }
        });
 
 
