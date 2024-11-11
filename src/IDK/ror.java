@@ -22,6 +22,8 @@ public class ror extends JFrame {
     private JTextArea taPersons;
     private JButton bClear;
     private JTextField textField1;
+    private JButton sayHiButton;
+    private JButton giveRewardButton;
 
     private ArrayList<Person> personList = new ArrayList<>();
     private JRadioButton[] buttongroup = {rbCustomer,rbClerk,rbManager};
@@ -41,7 +43,7 @@ public class ror extends JFrame {
            }
        });
 
-
+        taPersons.setEditable(false);
     }
 
     private void savePerson(){
