@@ -77,7 +77,7 @@ public class ror extends JFrame {
             JOptionPane.showMessageDialog(null, "Invalid name or age");
 
         } catch (IllegalArgumentException e){
-            JOptionPane.showMessageDialog(this, "Input error", "Error", JOptionPane.ERROR_MESSAGE)
+            JOptionPane.showMessageDialog(this, "Input error", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
